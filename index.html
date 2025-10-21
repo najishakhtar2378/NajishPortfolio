@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NAJISH AKHTAR - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Animated background particles-->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo" style="font-size: 20px;">NAJISH AKHTAR</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2 style="color: cornsilk;font-style: italic; ">NAJISH AKHTAR</h2>
+        <p class="subtitle">Full Stack Developer & Problem Solver</p>
+        <p class="description">
+          Passionate towards coding and learning new technologies. Currently
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="section-title" style="font-style: italic; color:rgb(29, 144, 246)" >About My-Self</h3>
+        <div class="about-grid">
+          <div class="about-image">
+            <div class="profile-image">
+              <img src="WhatsApp Image 2023-03-29 at 9.42.28 PM.jpg" alt="Profile Photo" />
+            </div>
+          </div>
+          <div class="about-text">
+            <h3 style="color:honeydew; font-size:28px;">I'm NAJISH AKHTAR</h3>
+            <p>
+              I'm a passionate full-stack developer with a strong foundation in
+              Data Structures and Algorithms. Currently diving deep into backend
+              technologies while building exciting projects like a wanderlust-A full tarvelling planning.
+            </p>
+            <p>
+              My journey in programming has been driven by curiosity and the joy
+              of solving complex problems. I believe in writing clean, efficient
+              code and creating meaningful digital experiences.
+            </p>
+            <p>
+              <strong>Fun fact:</strong> "I solve DSA problems for fun... and
+              sometimes dream in JavaScript." 😄
+            </p>
+            <div class="about-links">
+              <a
+                href="https://drive.google.com/file/d/1CEuhKlXzItdwMWph6ifjzC26fbAM-ulY/view?usp=drivesdk"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card"> 
+             <div
+              class="stat-number"
+              onclick="window.open('https://drive.google.com/file/d/1GgpQtaSaYh7CjB2rMONAItuRtpzPNrTe/view?usp=drivesdk')"
+            >
+            2
+            </div>
+           <div class="stat-label">Internship Certificate</div>
+          </div>
+          <div class="stat-card">
+            <div
+              class="stat-number"
+              onclick="window.location.href='https://leetcode.com/u/najishakhtarCoder123/'"
+              style="cursor: pointer"
+            >
+              300+
+            </div>
+            <div class="stat-label">DSA Problems Solved</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years Learning</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section" style="background:rgb(10, 0, 0); padding:20px;">
+    <div class="container">
+      <h2 class="section-title">Experience & Internship</h2>
+      <div class="card">
+        <h1>Web Development Intern</h1>
+        <h2>TechieHelp (20 Aug 25 - 20 Sep 25)</h2>
+        <p>
+          The objective of this project is to develop a web-based Construction
+          Management System that simplifies the planning, tracking, and execution of construction projects.
+          Traditional manual methods often cause errors, delays, and poor communication. This system
+          provides a centralized platform with modules such as Home, Services, Projects, Blog, and Contact
+          to ensure smooth navigation and accessibility. Key features include task management, resource
+          allocation, and progress tracking, which help stakeholders stay updated in real time. The project
+          aims to improve efficiency, accuracy, and collaboration, while being scalable for future integration
+          with advanced technologies like AI and IoT.
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.getElementById("experience").addEventListener("click", function (e) {
+      e.preventDefault();
+      document.getElementById("experience").scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Backend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">RESTful APIs</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-layer-group"></i> MERN Stack</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">JWT Authentication</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-brain"></i> Problem Solving</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Algorithms</span>
+              <!-- <span class="skill-tag">GeeksforGeeks</span> -->
+              <span class="skill-tag">Logical Thinking</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div id="projectsContainer" class="projects-grid">
+          <!-- Projects will be dynamically loaded from script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              I'm always open to discussing new opportunities, interesting
+              projects, or just having a chat about technology!
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email ( Most Recommended)</h4>
+                  <a href="mailto:najishchamparni2003@gmail.com"
+                    >najishchamparni2003@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a
+                    href="https://linkedin.com/in/najish-akhtar-698b30263"
+                    target="_blank"
+                    >Connect with me</a
+                  >
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/najishakhtar2378" target="_blank"
+                    >Follow my work</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- form -->
+           <!-- <div class="contact-form">
+           
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>  -->
+          <!-- form -->
+           <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" placeholder="Subject" required />
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          
+            <!-- Success Message -->
+            <p id="successMsg" style="color:green; display:none; margin-top:10px;">
+              Your message has been sent successfully!
+            </p>
+          </div>
+          
+          <script>
+            const form = document.getElementById("contactForm");
+            const successMsg = document.getElementById("successMsg");
+
+            form.addEventListener("submit", function (e) {
+              e.preventDefault(); // Page reload rok diya
+
+              // Form data fetch karo
+              const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+              };
+
+              // Demo: Console me data dikhana
+              console.log("Form Submitted:", formData);
+
+              // Success message show karo
+              successMsg.style.display = "block";
+
+              // Form reset karo
+              form.reset();
+
+              // 5 second me success message hide kar do
+              setTimeout(() => {
+                successMsg.style.display = "none";
+              }, 5000);
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+
+       <!-- Footer  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2025 Najish Akhtar. All rights reserved.</p>
+            <p>
+              "I solve DSA problems for fun... and sometimes dream in
+              JavaScript."
+            </p>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com/najishakhtar2378" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/najish-akhtar-698b30263"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:najishchamparni2003@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+             <a href="https://instagram.com/najish3262"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/7079308040"
+             target="_blank"
+             ><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
