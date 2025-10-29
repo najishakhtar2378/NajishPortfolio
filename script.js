@@ -26,11 +26,11 @@ const projectsData = [
     description:
       "A real-time app with a React frontend and Node.js + Express backend, fetching global headlines via public API.",
 
-    technologies: ["React", "Node.js", "Express", "API"],
-    githubLink: "",
-    liveLink: null,
+    technologies: ["React.js", "Node.js", "Express.js", "API","socket","mongoDB",],
+    githubLink: "https://github.com/najishakhtar2378/zoomFrontend.git",
+    liveLink: "http://zoom-frontend-inky.vercel.app/",
     icon: "fas fa-user",
-    status: "Progress",
+    status: "completed",
   },
 
   {
