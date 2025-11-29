@@ -23,9 +23,7 @@ const projectsData = [
 
   {
     title: "Zoom_Clone",
-    description:
-      "A real-time app with a React frontend and Node.js + Express backend, fetching global headlines via public API.",
-
+    description: "A real-time app with a React frontend and Node.js + Express backend, fetching global headlines via public API. Built a full-stack real-time video conferencing web app using WebRTC, React, and Socket.io.Implemented live video/ audio streaming, screen sharing, meeting chat, participant management, and secure room - based communication.Deployed on Vercel + Render with optimized P2P connections.",
     technologies: ["React.js", "Node.js", "Express.js", "API","socket","mongoDB",],
     githubLink: "https://github.com/najishakhtar2378/zoomFrontend.git",
     liveLink: "http://zoom-frontend-inky.vercel.app/",
