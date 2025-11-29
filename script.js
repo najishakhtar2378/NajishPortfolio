@@ -32,6 +32,15 @@ const projectsData = [
     icon: "fas fa-user",
     status: "completed",
   },
+    {
+    title: "Cunstruction Website",
+    description: "The objective of this project is to develop a web-based Construction Management System that simplifies the planning, tracking, and execution of construction projects. Traditional manual methods often cause errors, delays, and poor communication. This system provides a centralized platform with modules such as Home, Services, Projects, Blog, and Contact to ensure smooth navigation and accessibility",
+    technologies: [ "CSS","REACT", "BootStrap", "JavaScript"],
+    githubLink: "https://github.com/najishakhtar2378/ConstructionWebsite.git",
+    liveLink: "https://construction-website-1yb4.vercel.app/",
+    icon: "fa-solid fa-hard-hat",
+    status: "completed",
+  },
 
   {
     title: "Post App (A social Media platform)",
