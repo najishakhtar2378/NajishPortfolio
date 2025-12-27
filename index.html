@@ -15,6 +15,7 @@
     />
   </head>
   <body>
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!--Animated background particles-->
     <div class="particles" id="particles"></div>
 
@@ -265,52 +266,7 @@
               </div>
             </div>
           </div>
-          <!-- form -->
-           <!-- <div class="contact-form">
-           
-            <form id="contactForm">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Your Message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i> Send Message
-              </button>
-            </form>
-          </div>  -->
-          <!-- form -->
+      
            <div class="contact-form">
             <form id="contactForm">
               <div class="form-group">
@@ -335,37 +291,7 @@
               Your message has been sent successfully!
             </p>
           </div>
-          
-          <script>
-            const form = document.getElementById("contactForm");
-            const successMsg = document.getElementById("successMsg");
-
-            form.addEventListener("submit", function (e) {
-              e.preventDefault(); // Page reload rok diya
-
-              // Form data fetch karo
-              const formData = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value
-              };
-
-              // Demo: Console me data dikhana
-              console.log("Form Submitted:", formData);
-
-              // Success message show karo
-              successMsg.style.display = "block";
-
-              // Form reset karo
-              form.reset();
-
-              // 5 second me success message hide kar do
-              setTimeout(() => {
-                successMsg.style.display = "none";
-              }, 5000);
-            });
-          </script>
+    
         </div>
       </div>
     </section>
@@ -404,6 +330,37 @@
         </div>
       </div>
     </footer>
+      <script>
+      // EmailJS init
+      (function () {
+        emailjs.init({
+          publicKey: "2zOwgp3OYCGFDj87n"
+        });
+      })();
+
+      // Form submit handle
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // page reload rokta hai
+
+          emailjs
+            .send("service_ehg9szs", "template_2mk1rgr", {
+              from_name: document.getElementById("name").value,
+              from_email: document.getElementById("email").value,
+              subject: document.getElementById("subject").value,
+              message: document.getElementById("message").value,
+            })
+            .then(function () {
+              alert("Message sent successfully ✅");
+              document.getElementById("contactForm").reset();
+            })
+            .catch(function (error) {
+              console.error("EmailJS Error:", error);
+              alert(error.text || "Failed to send message ❌");
+            });
+        });
+    </script>
 
     <script src="script.js"></script>
   </body>
