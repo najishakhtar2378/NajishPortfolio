@@ -32,9 +32,9 @@ const projectsData = [
   },
     {
     title: "Cunstruction Website",
-    description: "The objective of this project is to develop a web-based Construction Management System that simplifies the planning, tracking, and execution of construction projects. Traditional manual methods often cause errors, delays, and poor communication. This system provides a centralized platform with modules such as Home, Services, Projects, Blog, and Contact to ensure smooth navigation and accessibility",
-    technologies: [ "CSS","REACT", "BootStrap", "JavaScript"],
-    githubLink: "https://github.com/najishakhtar2378/ConstructionWebsite.git",
+    description: "The objective of this project is to develop a web-based Construction Management System that simplifies the planning, tracking, and execution of construction projects. Traditional manual methods often cause errors, delays, and poor communication. This system provides a centralized platform with modules such as Home, Services, Projects, Blog, and Contact to ensure smooth navigation and accessibility I alse used emailJs for contact",
+    technologies: [ "CSS","REACT", "BootStrap", "JavaScript","emailjs"],
+    githubLink: "https://github.com/najishakhtar2378/Our-Construction-Website.git",
     liveLink: "https://our-construction-website-zxtp.vercel.app/",
     icon: "fa-solid fa-hard-hat",
     status: "completed",
