@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!--Animated background particles-->
     <div class="particles" id="particles"></div>
 
@@ -26,6 +26,7 @@
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#educations">Educations</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -62,7 +63,7 @@
         <div class="about-grid">
           <div class="about-image">
             <div class="profile-image">
-              <img src="image3.jpeg" alt="Profile Photo" />
+              <img src="WhatsApp Image 2023-03-29 at 9.42.28 PM.jpg" alt="Profile Photo" />
             </div>
           </div>
           <div class="about-text">
@@ -83,7 +84,7 @@
             </p>
             <div class="about-links">
               <a
-                href="https://drive.google.com/file/d/1bJFHAAztl-eZDHFCWzE9Px_EzPLtJPux/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1CEuhKlXzItdwMWph6ifjzC26fbAM-ulY/view?usp=drivesdk"
                 target="_blank"
                 class="btn btn-primary"
               >
@@ -124,24 +125,89 @@
         </div>
       </div>
     </section>
+   <!-- Education Section -->
+<section id="educations" class="section" style="background: rgb(5, 5, 5);">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+    <div class="card">
+      <h1>Bachelor of Technology>
+         <i class="fas fa-graduation-cap edu-icon"></i>
+      </h1>
+        <p style="color: aliceblue;">Computer Science and Engineering</p>
+      <h2 style="font-size: 14px;">Gurukula Kangdi(Deemed to be) University Haridwar-Uttrakhand</h2>
+      <p style="color: hsl(0, 20%, 98%); font-size: 14px;"> Oct-2022 – Nov 2026</p>
+       <p style="color: hsl(0, 1%, 86%); font-size: 10px;">CGPA: 8.5</p>
+      <p>
+        Currently pursuing B-Tech with a strong foundation in Computer Science.
+        Actively learning Full Stack Web Development, Data Structures &
+        Algorithms, and backend technologies. Passionate about building scalable
+        web applications and solving real-world problems.
+      </p>
+    </div>
+    <div class="card">
+      <h1 style="font-size: 14px;">Higher Secondary (12th) [PCM]
+         <i class="fas fa-school edu-icon"></i>
+      </h1>
+      <h2 style="font-size: 14px;">Shri Narayan Singh College Motihari</h2>
+      <p style="color: hsl(0, 40%, 98%);">Mar-2020 – Apr-2021</p>
+       <p style="color: hsl(0, 1%, 86%); font-size: 10px;">Percentage: 80.6%</p>
+      <p>
+        Completed higher secondary education with a focus on Mathematics and
+        Computer Science, which built my logical thinking and problem-solving
+        skills.
+      </p>
+    </div>
+    <div class="card">
+      <h1 style="font-size: 14px;">Secondary School (10th)
+         <i class="fas fa-school edu-icon"></i>
+      </h1>
+      <h2 style="font-size: 14px;">+2 Zila School Motihari</h2>
+      <p style="color: hsl(0, 50%, 99%); font-size: 14px;">Mar-2018 – Apr-2019</p>
+      <p style="color: hsl(0, 1%, 86%); font-size: 10px;">Percentage: 78.6%</p>
+      <p>
+        Completed secondary school education with a focus on Mathematics and
+        Computer Science, which built my logical thinking and problem-solving
+        skills.
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+<script>
+  document.querySelector('a[href="#educations"]').addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("educations").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+</script>
 
   <!-- Experience Section -->
   <section id="experience" class="section" style="background:rgb(10, 0, 0); padding:20px;">
     <div class="container">
       <h2 class="section-title">Experience & Internship</h2>
+      <div class="experience-grid">
       <div class="card">
         <h1>Web Development Intern</h1>
-        <h2>TechieHelp (20 Aug 25 - 20 Sep 25)</h2>
+        <p style="color: aliceblue;">20 Aug-2025 - 20 Sep-2025</p>
+        <h2 style="font-size: 14px;">TechieHelp</h2>
         <p>
           The objective of this project is to develop a web-based Construction
           Management System that simplifies the planning, tracking, and execution of construction projects.
           Traditional manual methods often cause errors, delays, and poor communication. This system
           provides a centralized platform with modules such as Home, Services, Projects, Blog, and Contact
           to ensure smooth navigation and accessibility. Key features include task management, resource
-          allocation, and progress tracking, which help stakeholders stay updated in real time. The project
-          aims to improve efficiency, accuracy, and collaboration, while being scalable for future integration
-          with advanced technologies like AI and IoT.
         </p>
+      </div>
+      <div class="card">
+        <h1>MERN Stack Developer Intern</h1>
+         <p style="color: aliceblue;">20-jan 2026 - 20-March 2026</p>
+        <h2 style="font-size: 14px;"> The Skybrisk</h2>
+        <p>
+          During my internship at Skybrisk, I worked on two major projects: Book Management System and ERP Management System. The Book Management System was designed to organize, store, and manage book records efficiently, including issuing, returning, and availability tracking. The ERP Management System focused on integrating multiple business operations such as user management, data handling, and workflow coordination into a single platform. Through these projects, I gained hands-on experience in backend development, database design, and real-world problem solving.
+        </p>
+      </div>
       </div>
     </div>
   </section>
@@ -266,7 +332,7 @@
               </div>
             </div>
           </div>
-      
+  
            <div class="contact-form">
             <form id="contactForm">
               <div class="form-group">
@@ -291,7 +357,8 @@
               Your message has been sent successfully!
             </p>
           </div>
-    
+          
+        
         </div>
       </div>
     </section>
@@ -330,11 +397,11 @@
         </div>
       </div>
     </footer>
-      <script>
+    <script>
       // EmailJS init
       (function () {
         emailjs.init({
-          publicKey: "2zOwgp3OYCGFDj87n"
+          publicKey: "4rW9aeRkvhuW-QdQA",
         });
       })();
 
@@ -345,7 +412,7 @@
           e.preventDefault(); // page reload rokta hai
 
           emailjs
-            .send("service_ehg9szs", "template_2mk1rgr", {
+            .send("service_dd06nse", "template_790bs57", {
               from_name: document.getElementById("name").value,
               from_email: document.getElementById("email").value,
               subject: document.getElementById("subject").value,
