@@ -1267,3 +1267,108 @@ nav.scrolled {
   #h3 section-title{
     color: #00d4ff;
 }
+/* experience */
+ /* ===== Experience Grid: 2 Columns with tight gap ===== */
+ #experience .experience-grid {
+     display: grid !important;
+     grid-template-columns: repeat(2, 1fr);
+     /* 2 columns desktop */
+     column-gap: 4px !important;
+     /* horizontal gap between the 2 cards */
+     row-gap: 12px;
+     /* vertical gap */
+     max-width: 1100px;
+     margin: 0 auto;
+     padding: 0 6px;
+     /* side padding small */
+ }
+
+ /* Mobile responsive */
+ @media (max-width: 768px) {
+     #experience .experience-grid {
+         grid-template-columns: 1fr;
+         /* single column on mobile */
+     }
+ }
+
+ /* ===== Cards styling ===== */
+ #experience .card {
+     margin: 0 !important;
+     /* remove extra margin */
+     padding: 10px;
+     /* compact padding */
+     border-radius: 8px;
+     /* smooth edges */
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ #experience .card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+ }
+
+ /* Optional: tighten headings inside card */
+ #experience .card h1,
+ #experience .card h2 {
+     margin-bottom: 6px;
+ }
+
+ #experience .card p {
+     margin-bottom: 6px;
+     line-height: 1.4;
+ }
+
+
+/* ===== Education: 3 Column Layout ===== */
+#educations .education-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    /* 🔥 3 columns */
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    #educations .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    #educations .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+#educations .education-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#educations .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#educations .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+/* ===== Education Icons ===== */
+#educations .edu-icon {
+    color: #1d90f6;
+    margin-right: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* Icon + text alignment */
+#educations h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#educations .card:hover .edu-icon {
+    transform: rotate(-8deg) scale(1.1);
+    transition: transform 0.3s ease;
+}
