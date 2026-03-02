@@ -8,8 +8,26 @@ const projectsData = [
     githubLink: "https://github.com/najishakhtar2378/WanderLustApps.git",
     liveLink: "https://wanderlustapps.onrender.com/listings",
   icon: "fas fa-home",
-  status: "In progress",
+  status: "completed",
 },
+   {
+  title: "ERP Manaement System(Quantivo ERP)",
+  description: "Developed a full-featured ERP Management System using the MERN stack (MongoDB, Express.js, React, Node.js) to efficiently manage a company’s core business operations. Implemented secure authentication and role-based access control using JWT (JSON Web Token) to ensure protected and scalable user access across the system.",
+  technologies: ["JavaScript","React js", "Node.js", "MongoDB", "Express", "RESTAPI","jwt"],
+    githubLink: "https://github.com/najishakhtar2378/erpmanagemntSystemFrontend.git",
+    liveLink: "https://erpmanagemnt-system-frontend-ozqu.vercel.app/login",
+  icon: "fas fa-industry",
+  status: "completed",
+ },
+    {
+    title: "Zoom_Clone",
+    description: "A real-time app with a React frontend and Node.js + Express backend, fetching global headlines via public API. Built a full-stack real-time video conferencing web app using WebRTC, React, and Socket.io.Implemented live video/ audio streaming, screen sharing, meeting chat, participant management, and secure room - based communication.Deployed on Vercel + Render with optimized P2P connections.",
+    technologies: ["React.js", "Node.js", "Express.js", "API","socket","mongoDB",],
+    githubLink: "https://github.com/najishakhtar2378/zoomFrontend.git",
+    liveLink: "https://zoom-frontend-inky.vercel.app/",
+    icon: "fas fa-user",
+    status: "completed",
+  },
   {
     title: "Zerodha_Clone-website",
     description:
@@ -21,15 +39,6 @@ const projectsData = [
     status: "completed",
   },
 
-  {
-    title: "Zoom_Clone",
-    description: "A real-time app with a React frontend and Node.js + Express backend, fetching global headlines via public API. Built a full-stack real-time video conferencing web app using WebRTC, React, and Socket.io.Implemented live video/ audio streaming, screen sharing, meeting chat, participant management, and secure room - based communication.Deployed on Vercel + Render with optimized P2P connections.",
-    technologies: ["React.js", "Node.js", "Express.js", "API","socket","mongoDB",],
-    githubLink: "https://github.com/najishakhtar2378/zoomFrontend.git",
-    liveLink: "https://zoom-frontend-inky.vercel.app/",
-    icon: "fas fa-user",
-    status: "completed",
-  },
     {
     title: "Cunstruction Website",
     description: "The objective of this project is to develop a web-based Construction Management System that simplifies the planning, tracking, and execution of construction projects. Traditional manual methods often cause errors, delays, and poor communication. This system provides a centralized platform with modules such as Home, Services, Projects, Blog, and Contact to ensure smooth navigation and accessibility I alse used emailJs for contact",
