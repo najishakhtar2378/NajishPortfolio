@@ -2,32 +2,34 @@
 
 const projectsData = [
   {
-  title: "Travelling  Website (Full-Stack like Airbnb )",
+  title: "WanderLust (Full-Stack like Airbnb )",
   description: "Full-stack wanderlust platform built with  for clean, maintainable code. Features user auth, property management, and real-time messaging. Responsive design ensures seamless experience across all devices.",
   technologies: ["JavaScript", "Node.js", "MongoDB", "Express", "EJS", "RESTAPI"],
     githubLink: "https://github.com/najishakhtar2378/WanderLustApps.git",
     liveLink: "https://wanderlustapps.onrender.com/listings",
   icon: "fas fa-home",
-  status: "completed",
+    status: "completed",
 },
-   {
-  title: "ERP Manaement System(Quantivo ERP)",
-  description: "Developed a full-featured ERP Management System using the MERN stack (MongoDB, Express.js, React, Node.js) to efficiently manage a company’s core business operations. Implemented secure authentication and role-based access control using JWT (JSON Web Token) to ensure protected and scalable user access across the system.",
-  technologies: ["JavaScript","React js", "Node.js", "MongoDB", "Express", "RESTAPI","jwt"],
+  {
+    title: "ERP Manaement System(Quantivo ERP)",
+    description: "Developed a full-featured ERP Management System using the MERN stack (MongoDB, Express.js, React, Node.js) to efficiently manage a company’s core business operations. Implemented secure authentication and role-based access control using JWT (JSON Web Token) to ensure protected and scalable user access across the system.",
+    technologies: ["JavaScript", "React js", "Node.js", "MongoDB", "Express", "RESTAPI", "jwt"],
     githubLink: "https://github.com/najishakhtar2378/erpmanagemntSystemFrontend.git",
     liveLink: "https://erpmanagemnt-system-frontend-ozqu.vercel.app/login",
-  icon: "fas fa-industry",
-  status: "completed",
- },
-    {
-    title: "Zoom_Clone",
+    icon: "fas fa-industry",
+    status: "completed",
+  },
+  {
+    title: "Video Conferencing App (Zoom Clone)",
     description: "A real-time app with a React frontend and Node.js + Express backend, fetching global headlines via public API. Built a full-stack real-time video conferencing web app using WebRTC, React, and Socket.io.Implemented live video/ audio streaming, screen sharing, meeting chat, participant management, and secure room - based communication.Deployed on Vercel + Render with optimized P2P connections.",
-    technologies: ["React.js", "Node.js", "Express.js", "API","socket","mongoDB",],
+    technologies: ["React.js", "Node.js", "Express.js", "API", "socket", "mongoDB",],
     githubLink: "https://github.com/najishakhtar2378/zoomFrontend.git",
     liveLink: "https://zoom-frontend-inky.vercel.app/",
     icon: "fas fa-user",
     status: "completed",
   },
+
+
   {
     title: "Zerodha_Clone-website",
     description:
@@ -39,20 +41,19 @@ const projectsData = [
     status: "completed",
   },
 
-    {
+  {
     title: "Cunstruction Website",
-    description: "The objective of this project is to develop a web-based Construction Management System that simplifies the planning, tracking, and execution of construction projects. Traditional manual methods often cause errors, delays, and poor communication. This system provides a centralized platform with modules such as Home, Services, Projects, Blog, and Contact to ensure smooth navigation and accessibility I alse used emailJs for contact",
-    technologies: [ "CSS","REACT", "BootStrap", "JavaScript","emailjs"],
-    githubLink: "https://github.com/najishakhtar2378/Our-Construction-Website.git",
-    liveLink: "https://our-construction-website-zxtp.vercel.app/",
+    description: "The objective of this project is to develop a web-based Construction Management System that simplifies the planning, tracking, and execution of construction projects. Traditional manual methods often cause errors, delays, and poor communication. This system provides a centralized platform with modules such as Home, Services, Projects, Blog, and Contact to ensure smooth navigation and accessibility",
+    technologies: [ "CSS","REACT", "BootStrap", "JavaScript"],
+    githubLink: "https://github.com/najishakhtar2378/ConstructionWebsite.git",
+    liveLink: "https://construction-website-1yb4.vercel.app/",
     icon: "fa-solid fa-hard-hat",
     status: "completed",
   },
-
   {
     title: "Post App (A social Media platform)",
     description: "A simple Post Management App built with React that allows users to create, edit, and delete posts in real time. It demonstrates state management, component reusability, and clean UI design."
-      ,
+    ,
     technologies: ["REACT", "BootStrap", "JavaScript"],
     githubLink: "https://github.com/najishakhtar2378/PostApp.git",
     liveLink: "https://post-app-virid.vercel.app/#",
@@ -72,7 +73,7 @@ const projectsData = [
   {
     title: "Dictionary App",
     description:
-      "A web-based dictionary application that provides definitions, synonyms, and translations for words using a public API.",
+    "A web-based dictionary application that provides definitions, synonyms, and translations for words using a public API.",
     technologies: ["React", "CSS", "API"],
     githubLink: "https://github.com/najishakhtar2378/DictionaryApp.git",
     liveLink: "https://dictionary-app-steel-five.vercel.app/",
@@ -841,6 +842,39 @@ function activateEasterEgg() {
   }, 5000);
 }
 
+// Back to Top Button Functionality
+function initializeBackToTop() {
+  let backToTopBtn = document.querySelector('.back-to-top');
+  
+  // Create button if it doesn't exist
+  if (!backToTopBtn) {
+    backToTopBtn = document.createElement('button');
+    backToTopBtn.classList.add('back-to-top');
+    backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    document.body.appendChild(backToTopBtn);
+  }
+
+  // Show/hide button on scroll
+  window.addEventListener('scroll', throttle(() => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  }, 100));
+
+  // Scroll to top on click
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+// Initialize back to top when DOM is ready
+document.addEventListener('DOMContentLoaded', initializeBackToTop);
+
 // Console message for developers
 console.log(`
 ███╗   ██╗ █████╗        ██╗    ██╗███████╗██╗  ██╗
@@ -862,12 +896,62 @@ console.log(`
     Let's connect: najishchamparni2003@gmail.com
 `);
 
+// ==================== GITHUB STATS LOADING ====================
+function initializeGitHubStats() {
+  const statImages = document.querySelectorAll('.github-stat-image img');
+  
+  // Add lazy loading and error handling
+  statImages.forEach((img) => {
+    img.addEventListener('error', () => {
+      // Show a fallback message if image fails
+      img.style.display = 'none';
+      const card = img.closest('.github-stat-card');
+      if (card) {
+        const errorMsg = document.createElement('p');
+        errorMsg.style.textAlign = 'center';
+        errorMsg.style.color = 'var(--text-secondary)';
+        errorMsg.innerHTML = 'Unable to load GitHub stats at the moment. <a href="https://github.com/najishakhtar2378" target="_blank" style="color:var(--accent-1);">Visit on GitHub</a>';
+        img.parentElement.appendChild(errorMsg);
+      }
+    });
+  });
+}
+
+// ==================== THEME TOGGLE ====================
+function initializeThemeToggle() {
+  const themeToggle = document.getElementById('themeToggle');
+  const htmlElement = document.documentElement;
+  
+  // Check if user has a saved theme preference
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  
+  // Apply saved theme
+  if (savedTheme === 'light') {
+    htmlElement.classList.add('light-mode');
+  } else {
+    htmlElement.classList.remove('light-mode');
+  }
+  
+  // Add click event listener to toggle button
+  themeToggle.addEventListener('click', () => {
+    htmlElement.classList.toggle('light-mode');
+    
+    // Save theme preference
+    const currentTheme = htmlElement.classList.contains('light-mode') ? 'light' : 'dark';
+    localStorage.setItem('theme', currentTheme);
+  });
+}
+
 // Initialize everything when DOM is ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
+    initializeGitHubStats();
+    initializeThemeToggle();
     console.log("Portfolio loaded successfully! 🚀");
   });
 } else {
+  initializeGitHubStats();
+  initializeThemeToggle();
   console.log("Portfolio loaded successfully! 🚀");
 }
 
